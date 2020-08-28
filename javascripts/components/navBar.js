@@ -21,33 +21,39 @@ const dinoModalFormDom = () => {
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <i class="fas fa-envelope prefix grey-text"></i>
-          <input type="text" id="defaultForm-email" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="defaultForm-email">Dino Name</label>
+          <input type="text" id="dinoName" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Dino Name:</label>
         </div>
 
         <div class="md-form mb-4">
           <i class="fas fa-lock prefix grey-text"></i>
-          <input type="text" id="defaultForm-pass" class="form-control validate">
+          <input type="text" id="dinoAge" class="form-control validate">
           <label data-error="wrong" data-success="right" for="defaultForm-pass">Dino Age:</label>
         </div>
        
         <div class="md-form mb-4">
           <i class="fas fa-lock prefix grey-text"></i>
-          <input type="text" id="defaultForm-pass" class="form-control validate">
+          <input type="text" id="dinoType" class="form-control validate">
           <label data-error="wrong" data-success="right" for="defaultForm-pass">Dino Type:</label>
         </div>
           
         <div class="md-form mb-4">
           <i class="fas fa-lock prefix grey-text"></i>
-          <input type="text" id="defaultForm-pass" class="form-control validate">
+          <input type="text" id="dinoOwner" class="form-control validate">
           <label data-error="wrong" data-success="right" for="defaultForm-pass">Owner:</label>
         </div>
           
         <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="textd" id="defaultForm-pass" class="form-control validate">
+            <input type="textd" id="dinoImage" class="form-control validate">
             <label data-error="wrong" data-success="right" for="defaultForm-pass">Image URL</label>
           </div>
+         
+          <div class="md-form mb-4">
+              <i class="fas fa-lock prefix grey-text"></i>
+              <input type="textd" id="dinoHealth" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Health (0-100)</label>
+            </div>
 
       </div>
       <div class="modal-footer d-flex justify-content-center">
@@ -62,4 +68,6 @@ const dinoModalFormDom = () => {
 </div>
   `)
 }
+
+
 export { navigation, dinoModalFormDom }
