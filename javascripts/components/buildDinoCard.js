@@ -1,5 +1,6 @@
 import { buildDino } from './dinoBuildDom.js';
 import { dinoModalFormDom } from './navBar.js';
+import { feedDino } from './dinoButtons.js';
 
 
 const buildDinoCards = (array) => {
@@ -15,6 +16,7 @@ const buildDinoCards = (array) => {
       $('#graveyard-dino').append(buildDino(item,index));
     }
     dinoModalFormDom();
+    feedDino(index, item, array)
   });
 }
 
