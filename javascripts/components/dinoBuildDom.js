@@ -14,7 +14,7 @@ const buildDino = (item, index) => {
   <button type="button" id="pet${index}" class="btn btn-dark">Pet</button> 
   </div>
   <div class="d-fex justify-content-around m-2 mt-3">
-  <button type="button" id="info${index}" class="btn btn-warning">Adventure</button>
+  <button type="button" id="adventure${index}" class="btn btn-warning">Adventure</button>
   <button type="button" id="delete${index}" class="btn btn-danger">Delete</button>
   </div>
   </div>`

@@ -83,7 +83,7 @@ const submitButtonClick = () => {
     health: 75, 
     adventures: [],
   };
-  dinos().push(dino);
+  dinos.push(dino);
   buildDinoCards(dino());
   dinoModalFormDom();
   });
