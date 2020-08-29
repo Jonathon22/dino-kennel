@@ -1,6 +1,6 @@
 import { buildDino } from './dinoBuildDom.js';
 import { dinoModalFormDom } from './navBar.js';
-import { feedDino } from './dinoButtons.js';
+import { feedDino, petDino, adventureDino, deleteDino } from './dinoButtons.js';
 
 
 const buildDinoCards = (array) => {
@@ -17,6 +17,9 @@ const buildDinoCards = (array) => {
     }
     dinoModalFormDom();
     feedDino(index, item, array)
+    petDino(index,item, array)
+    adventureDino(index,item, array)
+    deleteDino(index, array)
   });
 }
 
