@@ -1,3 +1,6 @@
+import { buildDinoCards } from "./buildDinoCard.js";
+import { dinos } from "../../data/helpers/dinoData.js";
+
 const navigation = () => {
   $('#navBar').html(`
  <nav class="navbar navbar-light bg-light">
@@ -64,10 +67,27 @@ const dinoModalFormDom = () => {
 </div>
 
 <div class="text-center">
-  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">ADD YOUR DINO HERE</a>
-</div>
-  `)
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">CHECK IN YOUR DINO</a>
+</div>`)
+ submitButtonClick();
 }
+
+const submitButtonClick = () => {
+  $(`#submit-dino`).click(() => {
+  let dino = { 
+    name: $('#dinoName').val(),
+    owner: $('#dinoOwner').val(),
+    age: $('#dinoAge').val(),
+    type: $('#dinoType').val(),
+    image: $('#dinoImage').val(),
+    health: 75, 
+    adventures: [],
+  };
+  dinos().push(dino);
+  buildDinoCards(dino());
+  dinoModalFormDom();
+  });
+};
 
 
 export { navigation, dinoModalFormDom }

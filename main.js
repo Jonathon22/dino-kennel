@@ -1,10 +1,10 @@
 import { navigation, dinoModalFormDom } from './javascripts/components/navBar.js'
-import {  dinoPush, buildDino } from './javascripts/components/dinoBuildDom.js'
+import {  buildDinoCards } from './javascripts/components/buildDinoCard.js'
+import { dinos } from './data/helpers/dinoData.js';
 const init = () => {
   navigation();
   dinoModalFormDom();
-  dinoPush();
-  buildDino();
+  buildDinoCards(dinos);
 }
 
 init();
