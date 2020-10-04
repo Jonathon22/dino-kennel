@@ -1,40 +1,26 @@
 
-# Dino Kennel
+# Dino Kennel - NSS Milestone 1
+This was built as a milestone project at NSS
 
-## **NOTE:** You cannot start coding until your project board and tickets have been approved by an instructor
+#### Requirements:
+* Healthy dinos show in the kennel
+* Sick dinos show in the hospital
+* Dead dinos show in the graveyard
+* Dinos can be removed from the kennel
+* Dinos can be added to the kennel
+* Dinos can be fed
+* Dinos can be pet
+* Dinos can be sent on an adventure
 
-## Description
-This project showcases all the vanilla javascript we learned in the foundations milestones.  It is designed to be a record keeping application for a dinosaur kennel.
 
-### Feature List
-- Healthy dinos show in the kennel
-- Sick dinos show in the hospital
-- Dead dinos show in the graveyard
-- Dinos can be removed from the kennel
-- Dinos can be added to the kennel
-- Dinos can be fed
-- Dinos can be petted
-- Dinos can be sent on an adventure
+### Build Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/27ff6aa1-f19d-4e5e-b675-f0b08c18f1ec/deploy-status)](https://app.netlify.com/sites/jonsdinokennel/deploys)
 
-## Technical Requirements
-* You must use [Boostrap](https://getbootstrap.com/) to style your page components.
-* Your JS file should be comprised of functions, no actions should happen in your code outside of a function
-* Your HTML and JS should all have proper indentations
-* You should be using ES6 modules
-* Your JS code should be formatted correctly!
 
-## Screenshots
-### Full Page view
-![Main View](./screenshots/main.png)
+### Tech Used
+* JavaScript ES6
+* JQuery 3.5.1
+* CSS 
 
-### Single Dino Modal
-![Single Dino Modal](./screenshots/single-dino.png)
-
-### Add New Dino
-![Add a Dino](./screenshots/add-dino.png)
-
-## How to Run
-1. Clone down this repo
-1. Make sure you have http-server installed via npm. If not get it [HERE](https://www.npmjs.com/package/http-server).
-1. On your command line run `hs -p 9999`
-1. In your browser go to `http://localhost:9999`
+### Site Link
+[Dino Kennel Site](https://jonsdinokennel.netlify.app/)
